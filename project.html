@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV Battery Swapping Education</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar (always visible) -->
+  <header class="bg-white shadow-md">
+    <nav class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-green-600">EV Battery Swapping</h1>
+      <ul class="flex space-x-8 text-base">
+        <li><a href="#home" class="hover:text-green-600">Home</a></li>
+        <li><a href="#about" class="hover:text-green-600">About</a></li>
+        <li><a href="#video" class="hover:text-green-600">Video</a></li>
+        <li><a href="#quiz" class="hover:text-green-600">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-green-100 py-24 text-center">
+    <div class="max-w-5xl mx-auto px-8">
+      <h2 class="text-5xl font-bold mb-6">Learn About EV Battery Swapping</h2>
+      <p class="text-xl text-gray-700">Explore the future of electric vehicle technology through interactive tools, videos, and knowledge quizzes—all optimized for desktop viewing.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="max-w-3xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-2 animate-pulse">What is Battery Swapping?</h2>
+    <p class="mb-4 transition-transform duration-700 hover:scale-105">
+    <br>  Battery swapping replaces your empty EV battery with a full one in minutes at swap stations, boosting efficiency and supporting clean energy.Battery swapping animations typically depict the process of an electric vehicle (EV) exchanging a depleted battery for a fully charged one at a dedicated station. These animations often show a robotic arm or automated system removing the old battery and installing a new one, minimizing downtime for the EV. The animations may also showcase the charging and storage of depleted batteries at the swapping station. 
+<br><b> Elements in Battery Swapping Animations</b>:
+<br>EV at a station The animation usually starts with an electric vehicle arriving at a battery swapping station. 
+<br>Automated process: The animation highlights the automation of the battery exchange, whether it's a robotic arm or a guided system. 
+ <br>removal The animation depicts the removal of the depleted battery from the EV. 
+<br>Battery insertion: The animation then shows the insertion of a fully charged battery. 
+
+
+    </p><div>
+      <h2 class="text-2xl font-semibold mb-2">Interactive Animation</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkNQ9VLE23VCttFDlovFhhLKNN7-hL-L3HdQ&s" alt="Battery swapping animation" class="w-full rounded" />
+    </div>
+    
+
+  <!-- VIDEO SECTION -->
+  <div><section id="video"> 
+      <h2 class="text-2xl font-semibold mb-2">Watch This Video</h2>
+      <!-- <video controls class="w-full rounded shadow">
+        <source src="battery swapping images animation - Google Search.html" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video> -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pmhQG66r3Gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+    </div>
+
+  <!-- QUIZ SECTION -->
+  <section id="quiz" class="max-w-3xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-2">Quick Quiz</h2>
+    <p>How long does a battery swap typically take?</p>
+    <div class="space-y-2 mt-2">
+      <button onclick="checkAns('a')" class="w-full py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">A) 30-60 min</button>
+      <button onclick="checkAns('b')" class="w-full py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">B) 3-5 min</button>
+      <button onclick="checkAns('c')" class="w-full py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">C) Over 1 hour</button>
+    </div>
+    <div id="result" class="mt-2 font-bold"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-green-600 text-white text-center p-3 mt-4">&copy; 2025 EV Education</footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function checkAns(opt) {
+      const r = document.getElementById('result');
+      if (opt === 'b') {
+        r.textContent = '✅ Correct! It takes 3-5 min.';
+        r.className = 'text-green-600 font-bold mt-2 animate-bounce';
+      } else {
+        r.textContent = '❌ Incorrect. Try again!';
+        r.className = 'text-red-600 font-bold mt-2';
+      }
+    }
+  </script>
+
+</body>
+</html>
+
